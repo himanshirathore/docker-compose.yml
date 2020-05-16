@@ -1,4 +1,4 @@
-# docker-compose.yml
+# docker-project
 version: '3'
 
 services:
