@@ -51,7 +51,8 @@ cd mycompose/
 
 vim docker-compose.yml
 (type I as to enter insert mode and :wq after entering esc to save it)
-systemctl restart docker
+![9](https://user-images.githubusercontent.com/65006678/82115627-92576d80-9781-11ea-89f1-49505ebe4c29.jpeg)
+![10](https://user-images.githubusercontent.com/65006678/82115628-92576d80-9781-11ea-8b4c-b8e61f6ee05e.jpeg)
  
  
 
@@ -59,15 +60,19 @@ systemctl restart docker
 Go to the project folder in which the .yml file is and run the following command:
 docker-compose up -d    (for rumming in background)
 docker-compose up       (to see the activities)
- 
+ ![11](https://user-images.githubusercontent.com/65006678/82115629-92f00400-9781-11ea-87dd-f573eba18c00.jpeg)
 
 Now open terminal in any new window:
 And run:
- 
+ ![12](https://user-images.githubusercontent.com/65006678/82115631-93889a80-9781-11ea-8185-d2ded7b704e3.jpeg)
 
 
 Everything is set now.
- 
+ ![13](https://user-images.githubusercontent.com/65006678/82115751-4eb13380-9782-11ea-95b9-8b35a3788bc8.jpeg)
+![14](https://user-images.githubusercontent.com/65006678/82115752-507af700-9782-11ea-8f61-ec3142b64073.jpeg)
+![15](https://user-images.githubusercontent.com/65006678/82115753-51138d80-9782-11ea-97dc-3b1bf9f16c33.jpeg)
+![16](https://user-images.githubusercontent.com/65006678/82115755-51ac2400-9782-11ea-8fa8-18071e52957c.jpeg)
+
 
  
  
