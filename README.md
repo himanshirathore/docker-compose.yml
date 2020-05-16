@@ -1,34 +1,73 @@
-# docker-project
-version: '3'
+IEC-RISE-DOCKER-COMPOSE-PROJECT
+In this project I have created a blog website using WordPress and MySql. Docker Compose is a tool for defining and running multi-container docker applications. 
 
-services:
-  dbos:
-    image: mysql:5.7
-    volumes:
-        - mysql_storage_new:/var/lib/mysql
-    restart: always
-    environment:
-        MYSQL_ROOT_PASSWORD: rootpass
-        MYSQL_USER: hena
-        MYSQL_PASSWORD: redhat
-        MYSQL_DATABASE: mydb
+Requirements/Installation
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Make sure you have the latest versions of Docker and Docker Compose installed on your machine.
+For installing run the commands:
+For Docker Installation on RedHat/Centos:
+Configure yum in RedHat/Centos to add Docker for local installation
+using "https://download.docker.com/linux/centos/docker-ce.repo" put this link in the file in /etc/yum.repos.d/
+ 
+ 
+Now, run command
+yum install docker-ce --nobest
+Start Docker:
+Systemctl enable docker
+systemctl start docker
 
-  wordpressos:
-    image: wordpress:5.4.1-php7.3-apache
-    restart: always
-    depends_on:
-        - dbos
-    ports:
-        - 8081:80
-    environment:
-        WORDPRESS_DB_HOST: dbos
-        WORDPRESS_DB_USER: hena
-        WORDPRESS_DB_PASSWORD: redhat
-        WORDPRESS_DB_NAME: mydb
-    volumes:
-    - wp_storage_new:/var/www/html
+After Docker installation for wordpress and database use below commands:
+docker pull wordpress:5.4.1-php.3 apache
+docker pull mysql:5.7
+  iptables –F
+Iptables –nvL
+
+ 
+
+ 
 
 
-volumes:
-    wp_storage_new:
-    mysql_storage_new:
+ 
+ 
+ 
+install Docker Compose:-
+curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+After installation of the above files:-
+
+Make a file using
+mkdir mycomposet/        (you can give any name)
+cd mycompose/
+
+vim docker-compose.yml
+(type I as to enter insert mode and :wq after entering esc to save it)
+systemctl restart docker
+ 
+ 
+
+
+Go to the project folder in which the .yml file is and run the following command:
+docker-compose up -d    (for rumming in background)
+docker-compose up       (to see the activities)
+ 
+
+Now open terminal in any new window:
+And run:
+ 
+
+
+Everything is set now.
+ 
+
+ 
+ 
+And to stop the docker compose:
+docker-compose stop
+Built With
+•	RHEL-8 Running in Virtual Box
+•	Docker
+•	Docker-compose
+•	Docker images:
+o	Mysql
+Wordpress
+
