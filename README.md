@@ -58,8 +58,8 @@ vim docker-compose.yml
 
 
 Go to the project folder in which the .yml file is and run the following command:
-docker-compose up -d    (for rumming in background)
-docker-compose up       (to see the activities)
+docker-compose up -d 
+docker-compose up      
  ![11](https://user-images.githubusercontent.com/65006678/82115629-92f00400-9781-11ea-87dd-f573eba18c00.jpeg)
 
 Now open terminal in any new window:
@@ -82,7 +82,6 @@ Built With
 •	RHEL-8 Running in Virtual Box
 •	Docker
 •	Docker-compose
-•	Docker images:
-o	Mysql
-Wordpress
+
+
 
