@@ -8,7 +8,8 @@ For installing run the commands:
 For Docker Installation on RedHat/Centos:
 Configure yum in RedHat/Centos to add Docker for local installation
 using "https://download.docker.com/linux/centos/docker-ce.repo" put this link in the file in /etc/yum.repos.d/
- 
+ ![1](https://user-images.githubusercontent.com/65006678/82115313-ad28e280-977f-11ea-922e-14d553e2a516.PNG)
+
  
 Now, run command
 yum install docker-ce --nobest
